@@ -1,8 +1,58 @@
-.header{
+@font-face {
+    font-family: 'TS Block';
+    src: url(Portfolio_Website_2\fonts\nexa_boldfree_macroman\TS Block Bold.ttf);
+}
+
+*{
     color: #F5F5F5;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0D0D0D;
+}
+
+.header{
+    margin-top: 30vh;
+    color: #F5F5F5;
+    position: relative;
+    background: none;
+    font-family: 'TS Block' ;
+    background-color: transparent;
+}
+.header h1{
+    margin-bottom: 0px;
     display: flex;
-    position: absolute;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    font-size: 120px;
+    background-color: transparent;
+}
+
+.header h2{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: transparent;
+}
+
+.My-Works{
+    margin-top: 50vh;
+    position: relative;
+    font-family: 'TS Block';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.My-Works-Title{
+    width: 541px;
+    height: 87px;
+    background-color: #0900FF;
+    box-shadow:8px 12px #E1E803;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
 }

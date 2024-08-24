@@ -20,7 +20,7 @@ var loader = new THREE.TextureLoader();
 loader.crossOrigin = "Anonymous";
 var dotTexture = loader.load('img/dotTexture.png');
 
-var radius = 50;
+var radius = 30;
 var sphereGeom = new THREE.IcosahedronGeometry(radius, 5);
 var dotsGeom = new THREE.Geometry();
 var bufferDotsGeom = new THREE.BufferGeometry();

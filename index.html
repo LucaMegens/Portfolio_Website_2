@@ -8,16 +8,12 @@
 		<link rel="stylesheet" href="css/style.css">
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
-	<body class="demo-2">
+	<body>
 		<main>
 
-			<div class="header">
-				<h1>Luca Megens</h1>
-				<h2>UX, front-end and design specialist</h2>
-			</div>
 
 			<div class="background animation">
-				<canvas class="scene scene--full" id="scene"></canvas>
+				<canvas class="scene scene--full" id="scene" style="height: 200vh;"></canvas>
 				<script type="x-shader/x-vertex" id="wrapVertexShader">
 					#define PI 3.1415926535897932384626433832795
 					attribute float size;
@@ -38,6 +34,21 @@
 					}
 				</script>
 			</div>
+
+
+			<div class="header">
+				<h1>Luca Megens</h1>
+				<h2>UX, front-end and design specialist</h2>
+			</div>
+
+			<div class="My-Works">
+				<div class="My-Works-Title">
+					My Works
+				</div>
+			</div>
+		
+
+
 			
 		</main>
 		<script src="js/three.min.js"></script>
