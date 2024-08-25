@@ -4,13 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Luca Megens</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/base.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
 	<body>
 		<main>
-
 
 			<div class="background animation">
 				<canvas class="scene scene--full" id="scene" style="height: 200vh;"></canvas>
@@ -35,22 +37,62 @@
 				</script>
 			</div>
 
-
+			
 			<div class="header">
 				<h1>Luca Megens</h1>
 				<h2>UX, front-end and design specialist</h2>
 			</div>
 
-			<div class="My-Works">
-				<div class="My-Works-Title">
-					My Works
-				</div>
-			</div>
-		
+			<div class="My-Works-Container">
 
+					<div class="My-Works">
+						<div class="My-Works-Title">
+							My Works
+						</div>
+					</div>
+
+					<div class="img-carousel">
+						  <!-- Full-width images with number and caption text -->
+  						<div class="mySlides fade">
+							<video src="videos/Mercedes-Benz Eqs - Existing Now (2160P).mp4" controls style="width: 100%"></video>
+							<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+								aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+								occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+								anim id est laborum."</div>
+						</div>
+
+						<div class="mySlides fade">
+							<img src= "videos/Screenshot 2024-06-30 133746.png" style="width: 100%;" alt="">
+							<div class="text">Caption Two</div>
+						</div>
+
+						<div class="mySlides fade">
+							<img src="img3.jpg" style="width:100%">
+							<div class="text">Caption Three</div>
+						</div>
+
+						<!-- Next and previous buttons -->
+						
+						
+						<br>
+
+						<!-- The dots/circles -->
+						<div class="dot-Container" style="text-align:center">
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+							<span class="dot" onclick="currentSlide(3)"></span>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+					</div>
+				</div>
 
 			
 		</main>
+		<script	src="js/imgCarousel.js"></script>
 		<script src="js/three.min.js"></script>
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo2.js"></script>
