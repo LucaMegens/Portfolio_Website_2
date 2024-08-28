@@ -1,10 +1,11 @@
 @font-face {
-    font-family: 'TS Block';
-    src: url(Portfolio_Website_2\fonts\nexa_boldfree_macroman\TS Block Bold.ttf);
+  font-family: "TS Block", "wedding-gothic-atf", sans-serif;
+  src: url('TSBlock-Bold.woff2') format('woff2'),
+      url('TSBlock-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
 
 .catamaran{
   font-family: "Catamaran", sans-serif;
@@ -26,7 +27,7 @@
     color: #F5F5F5;
     position: relative;
     background: none;
-    font-family: 'TS Block' ;
+    font-family: "TS Block", "wedding-gothic-atf", sans-serif;
     background-color: transparent;
 }
 .header h1{
@@ -55,11 +56,12 @@
     width: 60%;
     height: 100vh;
 }
-
+/*--- My works styling ---*/
 .My-Works{
     position: relative;
-    font-family: 'TS Block';
+    font-family: "TS Block", "wedding-gothic-atf", sans-serif;
     background-color: transparent;
+    height: 100px;
 }
 
 .My-Works-Title{
@@ -73,21 +75,23 @@
     font-size: 60px;
 }
 
-/* Slideshow container */
+/*--- Slideshow container ---*/
 .img-carousel {
+    background-color: transparent;
     max-width: 1000px;
     position: relative;
     margin: auto;
     height: 80%;
     overflow: unset;
+    margin-top: 30px;
   }
   
-  /* Hide the images by default */
+  /*--- Hide the images by default ---*/
   .mySlides {
     display: none;
   }
   
-  /* Next & previous buttons */
+  /*--- Next & previous buttons ---*/
   .prev, .next {
     background-color: transparent;
     cursor: pointer;
@@ -99,18 +103,20 @@
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
+  /*--- Position the "next button" to the right ---*/
   .next {
     right: 0;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
+  /*--- On hover, add a black background color with a little bit see-through ---*/
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
   
-  /* Caption text */
+  /*--- Caption text ---*/
   .text {
+    display: flex;
+    flex-direction: column;
     background-color: #131313;
     font-family: 'Catamaran';
     font-size: 20px;
@@ -121,16 +127,7 @@
     text-align: left;
   }
   
-  /* Number text (1/3 etc) */
-  .numbertext {
-    font-family: 'TS Block';
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
+  /*--- The dots/bullets/indicators ---*/
   .dot-Container{
     position: relative;
     display: flex;
@@ -154,14 +151,31 @@
   .active, .dot:hover {
     background-color: #F5F5F5;
   }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+
+  /*--- Learn more ---*/
+  .Learn-More{
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 20px;
+    background-color: #0900FF;
+    box-shadow: 6px 6px #E1E803;
+    width: 225px;
+    transition: 0.2s ease;
   }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+
+  .Learn-More a{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "TS Block", "wedding-gothic-atf", sans-serif;
+    text-decoration: none;
+    padding: 0px 10px;
+  }
+
+  .Learn-More:hover{
+    width: 260px;
+    letter-spacing: 2px;
   }
