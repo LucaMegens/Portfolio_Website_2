@@ -22,6 +22,23 @@
     overflow-x: hidden;
 }
 
+
+/*--- Nav Styling ---*/
+
+nav{
+  position: fixed;
+  margin: 30px;
+}
+
+nav div{
+  display: none;
+}
+
+nav div:active{
+  display: flex;
+}
+
+/*--- Header Styling ---*/
 .header{
     margin-top: 30vh;
     color: #F5F5F5;
@@ -48,6 +65,8 @@
     background-color: transparent;
 }
 
+
+/*--- My works styling ---*/
 .My-Works-Container{
     background-color: transparent;
     position: relative;
@@ -56,7 +75,7 @@
     width: 60%;
     height: 100vh;
 }
-/*--- My works styling ---*/
+
 .My-Works{
     position: relative;
     font-family: "TS Block", "wedding-gothic-atf", sans-serif;
@@ -179,3 +198,67 @@
     width: 260px;
     letter-spacing: 2px;
   }
+
+  .Existing-Now{
+    background-color: transparent;
+    font-family: "TS Block", "wedding-gothic-atf", sans-serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+
+/*--- My Specialities Styling ---*/
+.My-Specialities-Container{
+  background-color: transparent;
+  position: relative;
+  left: 20%;
+  margin-top: 50vh;
+  width: 60%;
+  height: 100vh;
+}
+
+.My-Specialities{
+    position: relative;
+    font-family: "TS Block", "wedding-gothic-atf", sans-serif;
+    background-color: transparent;
+    height: 100px;
+}
+
+.My-Specialities-Title{
+  width: 835px;
+  height: 87px;
+  background-color: #0900FF;
+  box-shadow:8px 12px #E1E803;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+
+.footer{
+  padding: 20px;
+  background-color: #F5F5F5;
+  font-size: 25px;
+  font-family: "TS Block", "wedding-gothic-atf", sans-serif;
+}
+
+.footer p{
+  display: flex;
+  font-weight: 700;
+  background-color: #F5F5F5;
+  color: #0D0D0D;
+  justify-content: center;
+  align-items: center;
+  font-family: 'catamaran';
+}
+
+.footer .contact{
+  font-family: "TS Block", "wedding-gothic-atf", sans-serif;
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+.footer p img{
+  padding-right:15px ;
+  padding-bottom: 10px;
+}
