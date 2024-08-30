@@ -26,6 +26,7 @@
 nav{
   position: fixed;
   margin: 30px;
+  background-color: transparent;
 }
 
 nav div{
@@ -34,6 +35,18 @@ nav div{
 
 nav div:active{
   display: flex;
+}
+
+nav p{
+  background-color: transparent;
+  font-family: "TS Block", "wedding-gothic-atf", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav img{
+  margin-right: 20px;
 }
 
 
@@ -61,7 +74,7 @@ nav div:active{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 35px;
     background-color: transparent;
 }
 
@@ -71,7 +84,7 @@ nav div:active{
     font-size: 2em;
   }
   .header h2{
-    font-size: 0.7em;
+    font-size: 0.55em;
   }
 }
 
@@ -82,7 +95,6 @@ nav div:active{
     left: 20%;
     margin-top: 50vh;
     width: 60%;
-    height: 100vh;
 }
 
 .My-Works{
@@ -238,12 +250,14 @@ nav div:active{
 
 /*--- My Specialities Styling ---*/
 .My-Specialities-Container{
+  display: flex;
+  flex-direction: column;
   background-color: transparent;
   position: relative;
   left: 20%;
-  margin-top: 50vh;
+  margin-top: 30vh;
   width: 60%;
-  height: 100vh;
+  margin-bottom: 250px;
 }
 
 .My-Specialities{
@@ -254,7 +268,7 @@ nav div:active{
 }
 
 .My-Specialities-Title{
-  width: 835px;
+  width: 700px;
   height: 87px;
   background-color: #0900FF;
   box-shadow:8px 12px #E1E803;
@@ -262,6 +276,22 @@ nav div:active{
   justify-content: center;
   align-items: center;
   font-size: 60px;
+}
+
+.My-Specialities-Container p{
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  width: 40%;
+  margin-top: 25px;
+  font-family: "Catamaran", sans-serif;
+  font-size: 25px;
+}
+
+.My-Specialities-Container .content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*--- Phone Styling ---*/
@@ -282,6 +312,11 @@ nav div:active{
   .My-Specialities{
     height: 80px;
   }
+  .My-Specialities-Container p{
+    margin-left: 20px;
+    font-size: 0.7em;
+  }
+
 
 }
 
