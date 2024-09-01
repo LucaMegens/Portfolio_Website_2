@@ -19,12 +19,12 @@
 }
 
 
-
-
 /*--- Nav Styling ---*/
 
 nav{
   position: fixed;
+  display: flex;
+  flex-direction: row;
   margin: 30px;
   background-color: transparent;
 }
@@ -48,8 +48,23 @@ nav p{
 nav img{
   margin-right: 20px;
 }
-
-
+/*--- Nav Phone Styling ---*/
+@media only screen and (max-width:600px){
+  
+  nav p{
+    display: none;
+  }
+  nav{
+    width: 100%;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 30px;
+    justify-content: end;
+  }
+  nav img{
+    width: 10%;
+  }
+}
 
 /*--- Header Styling ---*/
 
@@ -78,7 +93,7 @@ nav img{
     background-color: transparent;
 }
 
-/*--- Phone styles ---*/
+/*--- Header Phone Styling ---*/
 @media only screen and (max-width:600px) {
   .header h1{
     font-size: 2em;
@@ -115,25 +130,6 @@ nav img{
     font-size: 60px;
 }
 
-/*--- Phone Styling ---*/
-@media only screen and (width <= 600px){
-  .My-Works-Title{
-    position: relative;
-    font-size: 20px;
-    height: 40px;
-    box-shadow:6px 6px #E1E803;
-    width: 200px;
-    left: 30px;
-  }
-  .My-Works-Container{
-    width: 100%;
-    left: auto;
-  }
-  .My-Works{
-    height: 80px;
-    margin-bottom: -50px;
-  }
-}
 
 /*--- Slideshow container ---*/
 .img-carousel {
@@ -141,7 +137,6 @@ nav img{
     max-width: 1000px;
     position: relative;
     margin: auto;
-    height: 80%;
     overflow: unset;
     margin-top: 30px;
   }
@@ -172,7 +167,14 @@ nav img{
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
-  
+
+  .Existing-Now{
+    background-color: transparent;
+    font-family: "TS Block", "wedding-gothic-atf", sans-serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
   /*--- Caption text ---*/
   .text {
     display: flex;
@@ -240,13 +242,39 @@ nav img{
     letter-spacing: 2px;
   }
 
-  .Existing-Now{
-    background-color: transparent;
-    font-family: "TS Block", "wedding-gothic-atf", sans-serif;
-    font-size: 25px;
-    margin-bottom: 15px;
-  }
 
+  /*--- My Works Phone Styling ---*/
+  @media only screen and (width <= 600px){
+    .My-Works-Title{
+      position: relative;
+      font-size: 20px;
+      height: 40px;
+      box-shadow:6px 6px #E1E803;
+      width: 200px;
+      left: 30px;
+    }
+    .My-Works-Container{
+      width: 100%;
+      left: auto;
+    }
+    .My-Works{
+      height: 80px;
+      margin-bottom: -50px;
+    }
+    .text{
+      font-size: 0.9rem;
+    }
+    .Existing-Now{
+      font-size: 20px;
+    }
+    .img-carousel{
+      width: 80%;
+    }
+    .Learn-More{
+      width: 185px;
+    }
+
+  }
 
 /*--- My Specialities Styling ---*/
 .My-Specialities-Container{
@@ -294,7 +322,7 @@ nav img{
   justify-content: center;
 }
 
-/*--- Phone Styling ---*/
+/*--- My Specialities Phone Styling ---*/
 
 @media only screen and (width <= 600px){
   .My-Specialities-Title{
@@ -306,18 +334,24 @@ nav img{
     left: 30px;
   }
   .My-Specialities-Container{
-    width: 100%;
+    width: 80%;
     left: auto;
   }
   .My-Specialities{
     height: 80px;
   }
-  .My-Specialities-Container p{
-    margin-left: 20px;
-    font-size: 0.7em;
+  .My-Specialities-Container .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 60px;
   }
-
-
+  .My-Specialities-Container p{
+    font-size: 0.9rem;
+    width: 80%;
+    margin-right: 0px;
+  }
 }
 
 .footer{
@@ -347,7 +381,7 @@ nav img{
   padding-bottom: 10px;
 }
 
-/*--- Phone Styling ---*/
+/*--- Footer Phone Styling ---*/
 
 @media only screen and (width <= 600px){
   .footer{
