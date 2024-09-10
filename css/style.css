@@ -262,7 +262,7 @@ nav img{
       margin-bottom: -50px;
     }
     .text{
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
     .Existing-Now{
       font-size: 20px;
@@ -284,7 +284,7 @@ nav img{
   position: relative;
   left: 20%;
   margin-top: 30vh;
-  width: 60%;
+  width: 100%;
   margin-bottom: 250px;
 }
 
@@ -306,20 +306,32 @@ nav img{
   font-size: 60px;
 }
 
-.My-Specialities-Container p{
+.content{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.content div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+}
+.content p{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: 50px;
-  width: 40%;
   margin-top: 25px;
   font-family: "Catamaran", sans-serif;
-  font-size: 25px;
+  font-size: 1.5em;
 }
-
-.My-Specialities-Container .content{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.content h1{
+  margin-top: 25px;
+  font-family: "Catamaran", sans-serif;
+  font-size: 2em;
 }
 
 /*--- My Specialities Phone Styling ---*/
@@ -334,22 +346,30 @@ nav img{
     left: 30px;
   }
   .My-Specialities-Container{
-    width: 80%;
+    width: 100%;
     left: auto;
   }
   .My-Specialities{
     height: 80px;
   }
-  .My-Specialities-Container .content{
+  .content{
+    padding-top: 0px;
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     left: 60px;
   }
-  .My-Specialities-Container p{
-    font-size: 0.9rem;
-    width: 80%;
+  .content div{
+    width: 70%;
+    padding-top: 0px;
+  }
+  .content h1{
+    font-size: 1.5rem;
+    padding-top: 0px;
+  }
+  .content p{
+    font-size: 1rem;
     margin-right: 0px;
   }
 }
