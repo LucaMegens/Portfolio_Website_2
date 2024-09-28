@@ -15,7 +15,7 @@
 	<body>
 		<main>
 
-			<div class="background animation">
+			<div id="BackgroundDim" class="background animation">
 				<canvas class="scene scene--full" id="scene" style="height: 200vh;"></canvas>
 				<script type="x-shader/x-vertex" id="wrapVertexShader">
 					#define PI 3.1415926535897932384626433832795
@@ -39,24 +39,38 @@
 			</div>
 
  			<!-- --- Navigation --- -->
-			<nav style="z-index: 100;">
-				<img src="img/Menu icon.svg" style="background-color: transparent;" alt=""><p>menu</p>
+			<nav class="NavBarClose" id="Nav-isClose"  style="z-index: 100;">
 				<div>
-					<a href="My works">my works</a>
-					<a href="My expertise">my expertise</a>
-					<a href="about me">about me</a>
-					<a href="contact">contact</a>
+					<p onclick="OpenNav()">
+						menu <img src="img/Menu icon.svg" style="background-color: transparent;" alt="">
+					</p>
 				</div>
 			</nav>
+			
+
+			<nav class="NavBarOpen" id="Nav-isOpen" style="display: none;" style="z-index: 100;">
+				<div class="background" style="z-index: 101;"></div>
 				
+				<div class="links">
+					<p onclick="CloseNav()">
+						close<img src="img/Icon feather-x.svg" alt="">
+					</p>
+					<a href="#MyWorks">works</a>
+					<a href="#About">about</a>
+					<a href="#Expertise">expertise</a>
+					<a href="#Contact">contact</a>
+
+				</div>
+			</nav>
+
 			 <!-- --- Header --- -->
-			<div class="header">
+			<section  class="header">
 				<h1>luca megens</h1>
 				<h2>ux, front-end and creative technologist</h2>
-			</div>
+			</section>
 
 			 <!-- --- My Works --- -->
-			<div class="My-Works-Container">
+			<section  id="MyWorks" class="My-Works-Container">
 
 					<div class="My-Works">
 						<div class="My-Works-Title">
@@ -131,12 +145,12 @@
 							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 					</div>
-			</div>
+			</section>
 
 			 <!-- --- My Specialities --- -->
-			<div class="My-Specialities-Container">
+			<section  class="My-Specialities-Container">
 
-				<div class="My-Specialities">
+				<div id="Expertise" class="My-Specialities">
 
 					<div class="My-Specialities-Title">
 						my expertise
@@ -173,10 +187,10 @@
 					</div>
 
 				</div>
-			</div>
+			</section>
 			
 			 <!-- --- Footer --- -->
-			<footer class="footer">
+			<footer  id="Contact" class="footer">
 				<p class="contact">let's get in touch</p>
 				<p><img src="img/LinkedIn.svg" style="background-color: #f5f5f5;" alt="">Luca Megens</p>
 				<p><img src="img/Email.svg" style="background-color: #f5f5f5;" alt="">mail@lucamegens.nl</p>
@@ -188,5 +202,6 @@
 		<script src="js/three.min.js"></script>
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo2.js"></script>
+		<script src="js/Nav.js"></script>
 	</body>
 </html>

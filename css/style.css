@@ -10,6 +10,10 @@
   font-optical-sizing: auto;
 }
 
+html{
+  scroll-behavior: auto;
+}
+
 *{
     color: #F5F5F5;
     margin: 0px;
@@ -18,36 +22,106 @@
     overflow-x: hidden;
 }
 
+/*--- Closed Nav Styling ---*/
 
-/*--- Nav Styling ---*/
-
-nav{
+.NavBarClose{
   position: fixed;
   display: flex;
   flex-direction: row;
   margin: 30px;
   background-color: transparent;
+  width: 95%;
 }
 
-nav div{
-  display: none;
-}
-
-nav div:active{
-  display: flex;
-}
-
-nav p{
+.NavBarClose div{
   background-color: transparent;
   font-family: "TS Block", "wedding-gothic-atf", sans-serif;
   display: flex;
+  justify-content: end;
+  align-items: baseline;
+  padding-right: 20px;
+  width: 100%;
+}
+.NavBarClose div p{
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  font-size: 2em;
+  cursor: pointer;
+  transition: ease-out 0.05s;
 }
 
-nav img{
-  margin-right: 20px;
+.NavBarClose div p:hover{
+  letter-spacing: 0.2em;
+  transition: ease-in 0.05s;
 }
+
+.NavBarClose div img{
+  padding-left: 15px;
+  background-color: transparent;
+}
+
+/*--- Open Nav Styling ---*/
+
+.NavBarOpen{
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  right: 0px;
+}
+
+.links{
+  background-color: transparent;
+  font-family: "TS Block", "wedding-gothic-atf", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: end;
+  background-color: #F5F5F5;
+  font-size: 2em;
+  padding-top: 80px;
+  padding-right: 60px;
+  width: 22%;
+}
+.background{
+  background-color: black;
+  width: 78%;
+  opacity: 0.8;
+}
+
+.NavBarOpen div p{
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #0D0D0D;
+  cursor: pointer;
+  transition: ease-out 0.05s;
+}
+
+.NavBarOpen div p:hover{
+  letter-spacing: 0.2em;
+  transition: ease-in 0.05s;
+}
+.NavBarOpen div img{
+  padding-left: 15px;
+  background-color: transparent;
+}
+.NavBarOpen div a{
+  transition: ease 0.05s;
+}
+
+.NavBarOpen div a:hover {
+  letter-spacing: 0.2em;
+  transition: ease 0.05s;
+}
+
 /*--- Nav Phone Styling ---*/
 @media only screen and (max-width:600px){
   
@@ -284,7 +358,7 @@ nav img{
   position: relative;
   left: 20%;
   margin-top: 30vh;
-  width: 100%;
+  width: 100vw;
   margin-bottom: 250px;
 }
 
